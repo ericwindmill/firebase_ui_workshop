@@ -54,8 +54,11 @@ Firebase has free tier that is more than plenty for our usecase. No Credit Card 
 7. Confirm that both Email/Password and the Google sign-in provider have been enabled.
     ![Confirm providers](assets/readme//google_enabled.png)
 
+---
 
+### 3. Set up repository
 
 1. Get code repository
-    ```git clone TODO && cd TODO```
-2.
+    ```git clone https://github.com/ericwindmill/firebase_ui_workshop.git && cd firebase_ui_workshop```
+2. Get Packages
+    ```flutter pub get```
