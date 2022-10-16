@@ -1,11 +1,9 @@
-1. Welcome / Intros
-2. Does anyone need help getting started
-3. Briefly go over Auth / Firebase Console
-4. Add AuthGuard
-    1. signInAnonymously?
-5. Add initial "easy" pages
-    1. Email / Password
-    2. Register
-    3. Forgot password
-6. Add GoogleAuthProvider
-7. Add CustomAuthFlow  
+-[] Cover at the app currently
+-[] Add anonymous sign-in
+-[] Replace with Email/Password sign-in
+-[] Add Register User / Forgot password pages
+-[] Customize the Sign-in page
+-[] Add GoogleAuthProvider
+-[] Add custom auth flow?
+-[] 2FA?
+-[] Emulators?
