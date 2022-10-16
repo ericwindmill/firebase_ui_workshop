@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'auth_gate.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-const String googleProviderId = 'YOUR CLIENT ID HERE -- SEE README FOR DETAILS';
+late final String googleProviderId;
 
 void main() async {
+  await dotenv.load(fileName: '.env');
+  googleProviderId = dotenv.get('GOOGLE_CLIENT_ID');
+
   runApp(const App());
 }
 
