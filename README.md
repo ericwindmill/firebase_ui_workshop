@@ -2,6 +2,9 @@
 
 This project contains starter code for the Flutteristas DevFest workshop.
 
+Slides: Checkback on October 22 for Slides
+
+
 ## (Some of) what you'll learn 
 
 This workshop is all about Firebase UI for Authentication, an official Package that allows you to integrate OAuth into your app with just a few lines of code. The workshop will cover:
@@ -38,8 +41,17 @@ Firebase has free tier that is more than plenty for our usecase. No Credit Card 
     ![Start a project](assets/readme/firebase_new_project.png)
 3. Click through the project creation options. Accept the Firebase terms if prompted. Skip setting up Google Analytics, because you won’t be using Analytics for this app.
     ![Don't Add Analytics](assets/readme/analytics.png)
+    
 
-### 2. Enable Authentication in Firebase Console
+### 2. Set up repository
+
+1. Get code repository
+    ```git clone https://github.com/ericwindmill/firebase_ui_workshop.git && cd firebase_ui_workshop```
+2. Get Packages
+    ```flutter pub get```
+
+
+### 3. Enable Authentication in Firebase Console
 
 1. In the Firebase console, expand the Build menu in the left panel.
 2. Click Authentication, and then click the Get Started button, then the Sign-in method tab.
@@ -54,11 +66,18 @@ Firebase has free tier that is more than plenty for our usecase. No Credit Card 
 7. Confirm that both Email/Password and the Google sign-in provider have been enabled.
     ![Confirm providers](assets/readme//google_enabled.png)
 
----
 
-### 3. Set up repository
+### 4. Add the Web SDK Client Id to your Flutter project
 
-1. Get code repository
-    ```git clone https://github.com/ericwindmill/firebase_ui_workshop.git && cd firebase_ui_workshop```
-2. Get Packages
-    ```flutter pub get```
+1. In the list of Sign-in providers, click "Google":
+    ![Sign-in provicers list](assets/readme/auth_providers_list.png)
+2. Click on the "Web SDK configuration" expansion-panel.
+3. Copy the value from ‘Web client ID"
+    ![Firebase Auth Web SDK client id screenshot](assets/readme/save_client_id.png)
+4. In your Flutter Project, navigate to "main.dart"
+5. Locate the constant called "googleProviderId" on line 4.
+6. Replace the current value with your Web SDK client id
+    ![Screenshot of Code showing the googleProviderId variable](assets/readme/main_dart_client_id.png)
+
+
+

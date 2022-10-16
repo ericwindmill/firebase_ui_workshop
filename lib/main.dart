@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'auth_gate.dart';
+
+const String googleProviderId = 'YOUR CLIENT ID HERE -- SEE README FOR DETAILS';
 
 void main() async {
   runApp(const App());

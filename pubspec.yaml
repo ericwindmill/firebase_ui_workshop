@@ -13,6 +13,7 @@ dependencies:
   firebase_auth: ^3.11.2
   google_sign_in: ^5.4.2
   flutterfire_ui: ^0.4.3+14
+  flutter_dotenv: ^5.0.2
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +21,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 flutter:
   uses-material-design: true
+
+assets:
+  - assets/dash.png
+  - assets/flutterfire_300px.png
+  - .env
